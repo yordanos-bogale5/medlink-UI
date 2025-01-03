@@ -71,6 +71,6 @@
   cursor: pointer;
 }
 
-.chat-input button:hover {
+.chat-input .send:hover {
   background-color: #218838;
 }

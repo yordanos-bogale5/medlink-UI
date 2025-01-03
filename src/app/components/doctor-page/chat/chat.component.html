@@ -28,14 +28,6 @@
   >
     <div class="chat-header p-5 bg-blue-600 text-white text-lg font-semibold">
       {{ selectedContact.name }}
-
-      <!-- Voice Chat Control -->
-      <button
-        (click)="toggleVoiceChat()"
-        class="ml-3 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600"
-      >
-        {{ isVoiceChatActive ? "🔚" : "📞" }}
-      </button>
     </div>
 
     <div
@@ -66,12 +58,22 @@
         [(ngModel)]="newMessage"
         class="flex-grow p-2 border border-gray-300 rounded resize-none h-10"
       ></textarea>
+
+      <!-- Voice Chat Control -->
+      <button
+        (click)="toggleVoiceChat()"
+        class="ml-3 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600"
+      >
+        {{ isVoiceChatActive ? "🔚" : "📞" }}
+      </button>
+
       <button
         (click)="sendMessage()"
-        class="bg-green-600 text-white rounded hover:bg-green-700 transition"
+        class="send bg-green-600 text-white rounded hover:bg-green-700 transition"
       >
         Send
       </button>
     </div>
   </div>
 </div>
+<!-- </div> -->

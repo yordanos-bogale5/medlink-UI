@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth\\ehealth.csproj": {}
+    "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth-backend\\ehealth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth\\ehealth.csproj": {
+    "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth-backend\\ehealth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth\\ehealth.csproj",
+        "projectUniqueName": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth-backend\\ehealth.csproj",
         "projectName": "ehealth",
-        "projectPath": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth\\ehealth.csproj",
+        "projectPath": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth-backend\\ehealth.csproj",
         "packagesPath": "C:\\Users\\teston-25\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth\\obj\\",
+        "outputPath": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\teston-25\\AppData\\Roaming\\NuGet\\NuGet.Config",

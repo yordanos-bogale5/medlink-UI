@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ChatService } from '../../../chat.service';
-import { VoiceChatService } from '../../../voice-chat.service';
+import { ChatService } from '../../../services/chat.service';
+import { VoiceChatService } from '../../../services/voice-chat.service';
 
 @Component({
   selector: 'app-chat',

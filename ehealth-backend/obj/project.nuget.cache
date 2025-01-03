@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9GM0gnqoa3s=",
+  "dgSpecHash": "Cd7Otjy50ws=",
   "success": true,
-  "projectFilePath": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth\\ehealth.csproj",
+  "projectFilePath": "C:\\Users\\teston-25\\Desktop\\angular\\ehealth\\ehealth-backend\\ehealth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\teston-25\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
     "C:\\Users\\teston-25\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

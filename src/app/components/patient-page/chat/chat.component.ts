@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { VoiceChatService } from '../../../services/voice-chat.service';
 
 @Component({
   selector: 'app-chat',
@@ -19,14 +20,14 @@ export class ChatComponent {
     },
     {
       id: 2,
-      name: 'John Mike',
-      specialty: 'Patient',
+      name: 'Dr. John ',
+      specialty: 'Neurology',
       profilePic: 'john.png',
     },
     {
       id: 3,
-      name: 'Mike Vanico',
-      specialty: 'Patient',
+      name: 'Dr. Mike ',
+      specialty: 'Pediatrics',
       profilePic: 'mike.png',
     },
   ];
@@ -40,6 +41,9 @@ export class ChatComponent {
   selectedContact: any = null;
   newMessage: string = '';
   searchQuery: string = '';
+  isVoiceChatActive: boolean = false;
+  localStream: MediaStream | null = null;
+  remoteStream: MediaStream | null = null;
 
   // ngOnInit(): void {}
 
@@ -63,5 +67,28 @@ export class ChatComponent {
       this.messages.push({ sender: 'Me', text: this.newMessage });
       this.newMessage = '';
     }
+  }
+
+  //voice chat
+  constructor(private voiceChatService: VoiceChatService) {}
+
+  toggleVoiceChat() {
+    if (this.isVoiceChatActive) {
+      this.stopVoiceChat();
+    } else {
+      this.startVoiceChat();
+    }
+  }
+
+  async startVoiceChat() {
+    this.localStream = await this.voiceChatService.initVoiceChat();
+    this.isVoiceChatActive = true;
+  }
+
+  stopVoiceChat() {
+    this.voiceChatService.stopCall();
+    this.localStream = null;
+    this.remoteStream = null;
+    this.isVoiceChatActive = false;
   }
 }
